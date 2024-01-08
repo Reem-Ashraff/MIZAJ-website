@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MIZAJ-snacks</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="javascript.js"></script>
+</head>
+<body class="bc">
+        <header class="container-fluid header">
+                <div class="row align-items-center">
+                        <div class="col-4 col-sm-3 align-items-center">
+                                <i class="fa-solid fa-mug-saucer d-inline-block"></i>
+                                <h3 class="d-inline-block h">MIZAJ</h3>
+                        </div>
+
+                        <div class="col-sm-4 col-8 offset-sm-5">
+                                <div class="search">
+                                        <label class="visually-hidden" for="specificSizeInputGroupUsername">Search</label>
+                                        <div class="input-group">
+                                                <div class="input-group-text">
+                                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                                </div>
+                                                <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Search">
+                                        </div>   
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <main class="container-fluid">
+                <div class="row">
+                        <aside class="col-2 ll rounded">
+                                <div class="row">
+                                        <ul class="col-12 list rounded">
+                                                <li class="s2"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
+                                                <li class="s2"><a href="drinks.html" class="text-decoration-none text-black">Drinks</a></li>
+                                                <li class="s1"><a href="snacks.html" class="text-decoration-none text-black">Snacks</a></li>
+                                                <li class="s2"><a href="cart.html" class="text-decoration-none text-black">Cart</a></li>
+                                                <li class="s2"><a href="about.html" class="text-decoration-none text-black">About</a></li>
+                                                <li class="s2"><a href="mailUs.html" class="text-decoration-none text-black">Mail us</a></li>
+                                                <li class="s2"><a href="login.html" class="text-decoration-none text-black">Log in</a></li>
+
+                                        </ul>
+                                </div>
+                        </aside>
+
+                        <section class="col-10">
+                                <div class="bs">
+                                        <button onclick="openAllSnacksWin(this)" class="rounded drink-button">All</button>
+                                        <button onclick="openSweetWin(this)" class="rounded drink-button1">Sweet</button>
+                                        <button onclick="openSaltyWin(this)" class="rounded drink-button1">Salty</button>
+                                        <button onclick="openNutsWin(this)" class="rounded drink-button1">Nuts</button>
+                                </div>
+                                <div class="row">
+                                        <div class="rounded j col-lg-2 col-md-3 class-sm-4 col-5">
+                                                <img src="images/blackcake.jpg" class="img">
+                                                <div>
+                                                        <h5 class="juice-name">Black Cake</h5>
+                                                        <p class="juice-price"><span class="dollar">$</span>30</p>
+                                                </div>
+                                                <form action="#">
+                                                        <h6 class="q">QTY</h6>
+                                                        <div class="q0">
+                                                                <input type="button"value="-" class="rounded-circle quantity" onclick="removeBlackCake(event)">
+                                                                <input type="text" name="qty-of=black-cake" value="0" class="w-25 q-h" id="num-of-black-cake">
+                                                                <input type="button" value="+" class="rounded-circle quantity" onclick="addBlackCake(event)">
+                                                        </div>
+                                                        <input type="submit" value="Add To Cart" class="rounded add-button">
+                                                </form>
+                                        </div>
+
+                                        <div class="rounded j col-lg-2 col-md-3 col-5">
+                                                <img src="images/peanut.jpg" class="img">
+                                                <div>
+                                                        <h5 class="juice-name">Peanut Butter Banana</h5>
+                                                        <p class="juice-price"><span class="dollar">$</span>20</p>
+                                                </div>
+                                                <form action="#">
+                                                        <h6 class="q">QTY</h6>
+                                                        <div class="q0">
+                                                                <input type="button"value="-" class="rounded-circle quantity" onclick="removePeanutButterBanana(event)">
+                                                                <input type="text" name="qty-of-Peanut-butter-banana" value="0" class="w-25 q-h" id="num-of-Peanut-butter-banana">
+                                                                <input type="button" value="+" class="rounded-circle quantity" onclick="addPeanutButterBanana(event)">
+                                                        </div>
+                                                        <input type="submit" value="Add To Cart" class="rounded add-button">
+                                                </form>
+                                        </div>
+
+                                        <div class="rounded j col-lg-2 col-md-3 col-5">
+                                                <img src="images/pizza.jpg" class="img">
+                                                <div>
+                                                        <h5 class="juice-name">Pizza</h5>
+                                                        <p class="juice-price"><span class="dollar">$</span>18</p>
+                                                </div>
+                                                <form action="#">
+                                                        <h6 class="q">QTY</h6>
+                                                        <div class="q0">
+                                                                <input type="button"value="-" class="rounded-circle quantity" onclick="removePizza(event)">
+                                                                <input type="text" name="quantity-of-pizza" value="0" class="w-25 q-h" id="num-of-pizza">
+                                                                <input type="button" value="+" class="rounded-circle quantity" onclick="addPizza(event)">
+                                                        </div>
+                                                        <input type="submit" value="Add To Cart" class="rounded add-button">
+                                                </form>
+                                        </div>
+
+                                        <div class="rounded j col-lg-2 col-md-3 col-5">
+                                                <img src="images/deviled-eggs.webp" class="img">
+                                                <div>
+                                                        <h5 class="juice-name">Deviled Eggs</h5>
+                                                        <p class="juice-price"><span class="dollar">$</span>16</p>
+                                                </div>
+                                                <form action="#">
+                                                        <h6 class="q">QTY</h6>
+                                                        <div class="q0">
+                                                                <input type="button"value="-" class="rounded-circle quantity" onclick="removeDeviledEggs(event)">
+                                                                <input type="text" name="num-of-deviled-eggs" value="0" class="w-25 q-h" id="num-of-eggs">
+                                                                <input type="button" value="+" class="rounded-circle quantity" onclick="addDeviledEggs(event)">
+                                                        </div>
+                                                        <input type="submit" value="Add To Cart" class="rounded add-button">
+                                                </form>
+                                        </div>
+
+                                        <div class="rounded j col-lg-2 col-md-3 col-5">
+                                                <img src="images/froyofruit.jfif" class="img">
+                                                <div>
+                                                        <h5 class="juice-name">Froyo Fruit Cups</h5>
+                                                        <p class="juice-price"><span class="dollar">$</span>24</p>
+                                                </div>
+                                                <form action="#">
+                                                        <h6 class="q">QTY</h6>
+                                                        <div class="q0">
+                                                                <input type="button"value="-" class="rounded-circle quantity" onclick="removeFroyoFruitCups(event)">
+                                                                <input type="text" name="num-of-froyo-fruit-cups" value="0" class="w-25 q-h" id="num-of-froyo-cups">
+                                                                <input type="button" value="+" class="rounded-circle quantity" onclick="addFroyoFruitCups(event)">
+                                                        </div>
+                                                        <input type="submit" value="Add To Cart" class="rounded add-button">
+                                                </form>
+                                        </div>
+
+                                        <div class="rounded j col-lg-2 col-md-3 col-5">
+                                                <img src="images/sweetpotatofries.jfif" class="img">
+                                                <div>
+                                                        <h5 class="juice-name">Sweet potato Fries</h5>
+                                                        <p class="juice-price"><span class="dollar">$</span>15</p>
+                                                </div>
+                                                <form action="#">
+                                                        <h6 class="q">QTY</h6>
+                                                        <div class="q0">
+                                                                <input type="button"value="-" class="rounded-circle quantity" onclick="removeFries(event)">
+                                                                <input type="text" name="num-of-sweet-potato-fries" value="0" class="w-25 q-h" id="num-of-fries">
+                                                                <input type="button" value="+" class="rounded-circle quantity" onclick="addFries(event)">
+                                                        </div>
+                                                        <input type="submit" value="Add To Cart" class="rounded add-button">
+                                                </form>
+                                        </div>
+
+                                        <div class="rounded j col-lg-2 col-md-3 col-5">
+                                                <img src="images/pralines.jfif" class="img">
+                                                <div>
+                                                        <h5 class="juice-name">Pralines</h5>
+                                                        <p class="juice-price"><span class="dollar">$</span>22</p>
+                                                </div>
+                                                <form action="#">
+                                                        <h6 class="q">QTY</h6>
+                                                        <div class="q0">
+                                                                <input type="button"value="-" class="rounded-circle quantity" onclick="removePralines(event)">
+                                                                <input type="text" name="quantity-of-pralines" value="0" class="w-25 q-h" id="num-of-pralines">
+                                                                <input type="button" value="+" class="rounded-circle quantity" onclick="addPralines(event)">
+                                                        </div>
+                                                        <input type="submit" value="Add To Cart" class="rounded add-button">
+                                                </form>
+                                        </div>
+                                </div>
+                        </section>
+                </div>
+        </main>
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

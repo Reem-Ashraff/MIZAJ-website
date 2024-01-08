@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MIZAJ</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="javascript.js"></script>
+</head>
+<body class="bc">
+        <header class="container-fluid header">
+                <div class="row align-items-center">
+                        <div class="col-4 col-sm-3 align-items-center">
+                                <i class="fa-solid fa-mug-saucer d-inline-block"></i>
+                                <h3 class="d-inline-block h">MIZAJ</h3>
+                        </div>
+
+                        <div class="col-sm-4 col-8 offset-sm-5">
+                                <div class="search">
+                                        <label class="visually-hidden" for="specificSizeInputGroupUsername">Search</label>
+                                        <div class="input-group">
+                                                <div class="input-group-text">
+                                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                                </div>
+                                                <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Search">
+                                        </div>   
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <main class="container-fluid">
+                <div class="row">
+                        <aside class="col-2 ll rounded">
+                                <div class="row">
+                                        <ul class="col-12 list rounded">
+                                                <li class="s1"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
+                                                <li class="s2"><a href="drinks.html" class="text-decoration-none text-black">Drinks</a></li>
+                                                <li class="s2"><a href="snacks.html" class="text-decoration-none text-black">Snacks</a></li>
+                                                <li class="s2"><a href="cart.html" class="text-decoration-none text-black">Cart</a></li>
+                                                <li class="s2"><a href="about.html" class="text-decoration-none text-black">About</a></li>
+                                                <li class="s2"><a href="mailUs.html" class="text-decoration-none text-black">Mail us</a></li>
+                                                <li class="s2"><a href="login.html" class="text-decoration-none text-black">Log in</a></li>
+
+                                        </ul>
+                                </div>
+                        </aside>
+
+                        <div class="col-10">
+                                <div class="row">
+                                        <section class="col-lg-7 col-md-6 col-11 t">
+                                                <h1 class="p">WELCOME TO MIZAJ</h1>
+                                                <h6 class="p1">Start your day with coffee and some snacks</h6>
+                
+                                                <div class="row download align-items-center justify-content-around rounded">
+                                                        <div class="text col-8">
+                                                                <h1 class="d">Download Our App</h1>
+                                                                <h6 class="p2">Have everything you need at your finger tip.</h6>
+                                                                <button class="button">Download Now</button>
+                                                        </div>
+                                                        <div class="col-3">
+                                                                <img src="images/drink.jpg" class="image">
+                                                        </div>
+                                                </div>
+                
+                                                <div class="row rounded picture">
+                                                        <div class="col-12">
+                                                                <p class="l1">For Family Time,</p>
+                                                                <p class="l2"><span class="text-warning s">Mizaj</span> Is The Best</p>
+                                                                <p class="l3">Order snacks and drinks from your place at one click</p>
+                                                                <div class="b">
+                                                                        <button class="b1" onclick="openAllSnacksWin(this)">Snacks</button>
+                                                                        <button class="b2" onclick="openAllDrinksWin(this)">Drinks</button>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </section>
+                
+                                        <aside class="col-md-4 col-11 rounded trending">
+                                                <h4 class="title">Trending</h4>
+                                                <div class="row align-items-center justify-content-between trend1">
+                                                        <div class="col-8">
+                                                                <div class="row align-items-center">
+                                                                        <div class="col-4">
+                                                                                <img src="images/americano.jpg" class="w-100 h-auto">
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                                <h5 class="head">Americano</h5>
+                                                                                <p class="price">$9.5</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <button class="cb rounded" onclick="window.open('cart.html','_self');">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                
+                                                <div class="row align-items-center justify-content-between trend1">
+                                                        <div class="col-8">
+                                                                <div class="row align-items-center">
+                                                                        <div class="col-4">
+                                                                                <img src="images/latte.jpg" class="w-100 h-auto">
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                                <h5 class="head">Latte</h5>
+                                                                                <p class="price">$11</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <button class="cb rounded" onclick="window.open('cart.html','_self');">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                
+                                                <div class="row align-items-center justify-content-between trend1">
+                                                        <div class="col-8">
+                                                                <div class="row align-items-center">
+                                                                        <div class="col-4">
+                                                                                <img src="images/Macchiato.jpg" class="w-100 h-auto">
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                                <h5 class="head">Macchiato</h5>
+                                                                                <p class="price">$9.5</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <button class="cb rounded" onclick="window.open('cart.html','_self');">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                
+                                                <div class="row align-items-center justify-content-between trend1">
+                                                        <div class="col-8">
+                                                                <div class="row align-items-center">
+                                                                        <div class="col-4">
+                                                                                <img src="images/greentea.jpg" class="w-100 h-auto">
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                                <h5 class="head">GreenTea</h5>
+                                                                                <p class="price">$11</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <button class="cb rounded" onclick="window.open('cart.html','_self');">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                
+                                                <div class="row align-items-center justify-content-between trend1">
+                                                        <div class="col-8">
+                                                                <div class="row align-items-center">
+                                                                        <div class="col-4">
+                                                                                <img src="images/pizza.jpg" class="w-100 h-auto">
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                                <h5 class="head">Pizza</h5>
+                                                                                <p class="price">$18</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <button class="cb rounded" onclick="window.open('cart.html','_self');">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                
+                                                <div class="row align-items-center justify-content-between trend1">
+                                                        <div class="col-8">
+                                                                <div class="row align-items-center">
+                                                                        <div class="col-4">
+                                                                                <img src="images/pralines.jfif" class="w-100 h-auto">
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                                <h5 class="head">Pralines</h5>
+                                                                                <p class="price">$22</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                                <button class="cb rounded" onclick="window.open('cart.html','_self');">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                                        </aside>
+                                </div>
+                        </div>
+                </div>
+        </main>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     
+</body>
+</html>
