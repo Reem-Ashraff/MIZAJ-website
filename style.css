@@ -305,7 +305,7 @@
         border-top: none;
         border-left: none;
         border-right: none;
-        border-color: gray;
+        border-bottom: 0.2vmin solid rgb(182, 180, 180);
         height: 5vmin;
         margin-bottom: 3.5vmin;
         font-size: 2.2vmin;
@@ -316,6 +316,7 @@
         border-top: none;
         border-left: none;
         border-right: none;
+        border-bottom: 0.2vmin solid rgb(182, 180, 180);
         border-color: rgb(182, 180, 180);
         height: 5vmin;
         font-size: 2.2vmin;
